@@ -1,4 +1,5 @@
 import React, { useContext, useState, useEffect } from "react";
+import { resolveAsset } from "../assets/resolveAsset";
 import Nav from "../Components/Nav";
 import categories from "./Category";
 import Card from "../Components/Card";
@@ -44,18 +45,18 @@ function Home() {
         {/* Collage background of many bright food photos */}
         <div className="absolute inset-0 opacity-40 blur-[0.5px] scale-[1.01]">
           <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 gap-2 w-full h-full p-2">
-            <img src="/src/assets/image9.avif" alt="food" className="w-full h-28 sm:h-32 md:h-36 object-cover rounded-lg saturate-150 brightness-110" />
-            <img src="/src/assets/image8.avif" alt="food" className="w-full h-28 sm:h-32 md:h-36 object-cover rounded-lg saturate-150 brightness-110" />
-            <img src="/src/assets/image14.webp" alt="food" className="w-full h-28 sm:h-32 md:h-36 object-cover rounded-lg saturate-150 brightness-110" />
-            <img src="/src/assets/image20.avif" alt="food" className="w-full h-28 sm:h-32 md:h-36 object-cover rounded-lg saturate-150 brightness-110" />
-            <img src="/src/assets/image3.avif" alt="food" className="w-full h-28 sm:h-32 md:h-36 object-cover rounded-lg saturate-150 brightness-110" />
-            <img src="/src/assets/image11.avif" alt="food" className="w-full h-28 sm:h-32 md:h-36 object-cover rounded-lg saturate-150 brightness-110" />
-            <img src="/src/assets/image1.avif" alt="food" className="w-full h-28 sm:h-32 md:h-36 object-cover rounded-lg saturate-150 brightness-110" />
-            <img src="/src/assets/image10.avif" alt="food" className="w-full h-28 sm:h-32 md:h-36 object-cover rounded-lg saturate-150 brightness-110" />
-            <img src="/src/assets/image6.avif" alt="food" className="w-full h-28 sm:h-32 md:h-36 object-cover rounded-lg saturate-150 brightness-110" />
-            <img src="/src/assets/image5.avif" alt="food" className="w-full h-28 sm:h-32 md:h-36 object-cover rounded-lg saturate-150 brightness-110" />
-            <img src="/src/assets/image21.avif" alt="food" className="w-full h-28 sm:h-32 md:h-36 object-cover rounded-lg saturate-150 brightness-110 hidden md:block" />
-            <img src="/src/assets/image25.avif" alt="food" className="w-full h-28 sm:h-32 md:h-36 object-cover rounded-lg saturate-150 brightness-110 hidden md:block" />
+            <img src={resolveAsset("image9.avif")} alt="food" className="w-full h-28 sm:h-32 md:h-36 object-cover rounded-lg saturate-150 brightness-110" />
+            <img src={resolveAsset("image8.avif")} alt="food" className="w-full h-28 sm:h-32 md:h-36 object-cover rounded-lg saturate-150 brightness-110" />
+            <img src={resolveAsset("image14.webp")} alt="food" className="w-full h-28 sm:h-32 md:h-36 object-cover rounded-lg saturate-150 brightness-110" />
+            <img src={resolveAsset("image20.avif")} alt="food" className="w-full h-28 sm:h-32 md:h-36 object-cover rounded-lg saturate-150 brightness-110" />
+            <img src={resolveAsset("image3.avif")} alt="food" className="w-full h-28 sm:h-32 md:h-36 object-cover rounded-lg saturate-150 brightness-110" />
+            <img src={resolveAsset("image11.avif")} alt="food" className="w-full h-28 sm:h-32 md:h-36 object-cover rounded-lg saturate-150 brightness-110" />
+            <img src={resolveAsset("image1.avif")} alt="food" className="w-full h-28 sm:h-32 md:h-36 object-cover rounded-lg saturate-150 brightness-110" />
+            <img src={resolveAsset("image10.avif")} alt="food" className="w-full h-28 sm:h-32 md:h-36 object-cover rounded-lg saturate-150 brightness-110" />
+            <img src={resolveAsset("image6.avif")} alt="food" className="w-full h-28 sm:h-32 md:h-36 object-cover rounded-lg saturate-150 brightness-110" />
+            <img src={resolveAsset("image5.avif")} alt="food" className="w-full h-28 sm:h-32 md:h-36 object-cover rounded-lg saturate-150 brightness-110" />
+            <img src={resolveAsset("image21.avif")} alt="food" className="w-full h-28 sm:h-32 md:h-36 object-cover rounded-lg saturate-150 brightness-110 hidden md:block" />
+            <img src={resolveAsset("image25.avif")} alt="food" className="w-full h-28 sm:h-32 md:h-36 object-cover rounded-lg saturate-150 brightness-110 hidden md:block" />
           </div>
         </div>
         {/* Gradient overlay for readability */}
